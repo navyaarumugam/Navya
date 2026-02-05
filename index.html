@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenFit Wellness Studio</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* ---------- General Styles ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 15px;
+            color: #0a2540;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* ---------- Header ---------- */
+        header {
+            background: #0a2540;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Hero Section ---------- */
+        .hero {
+            background: linear-gradient(to right, #e6f0ff, #f9fbff);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        /* ---------- About Section ---------- */
+        .about {
+            background: #ffffff;
+            text-align: center;
+        }
+
+        /* ---------- Services Section ---------- */
+        .services {
+            background: #f4f7fb;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        /* ---------- Features Section ---------- */
+        .features {
+            background: #ffffff;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            border-left: 4px solid #0a2540;
+            background: #f9fbff;
+        }
+
+        /* ---------- Contact Section ---------- */
+        .contact {
+            background: #f4f7fb;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #0a2540;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #133b6f;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            background: #0a2540;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar container">
+            <div class="logo">ZenFit Studio</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Balance Your Body, Mind & Life</h1>
+            <p>
+                ZenFit Wellness Studio helps you achieve a healthier lifestyle through fitness,
+                mindfulness, and personalized wellness programs.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                ZenFit Wellness Studio is dedicated to improving physical and mental well-being.
+                We offer a calm, professional environment where individuals can focus on fitness,
+                stress relief, and overall health with expert guidance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Yoga & Meditation</h3>
+                    <p>Guided sessions to improve flexibility, focus, and mental peace.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Personal Training</h3>
+                    <p>Customized fitness programs designed for your body and goals.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Nutrition Guidance</h3>
+                    <p>Healthy eating plans to support your fitness and lifestyle.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Wellness Workshops</h3>
+                    <p>Group sessions on stress management and healthy habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why Choose Us -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+
+            <div class="feature-list">
+                <div class="feature">Certified & Experienced Trainers</div>
+                <div class="feature">Peaceful & Professional Environment</div>
+                <div class="feature">Personalized Wellness Plans</div>
+                <div class="feature">Holistic Health Approach</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ZenFit Wellness Studio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
